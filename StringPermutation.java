@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package strings;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -15,14 +8,14 @@ import java.util.Scanner;
  */
 public class StringPermutation {
     public static void main(String args[]){
-        String one, two;
+        String one, two;                                                //Two input strings to be checked
         boolean flag;
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the first string: ");
         one = sc.next();
         System.out.print("Enter the second string: ");
         two = sc.next();
-        flag = isPerm(one, two);
+        flag = isPerm(one, two);                                        
         
         if(flag){
             System.out.println("Strings are permutation of each other");
@@ -31,7 +24,7 @@ public class StringPermutation {
         }
     }
     
-    public static boolean isPerm(String x, String y){
+    public static boolean isPerm(String x, String y){                       //Checks if strings are permutation of each other
         if(x.length() != y.length())
             return false;
         char ch;
